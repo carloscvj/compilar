@@ -23,7 +23,26 @@
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-antrun-plugin</artifactId>
+                    <version>1.8</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>es.cvjpy.utilidades</groupId>
+                            <artifactId>JasperC</artifactId>
+                            <version>1.0</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>es.cvjpy.utilidades</groupId>
+                            <artifactId>CobolC</artifactId>
+                            <version>1.0</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>es.cvjpy.utilidades</groupId>
+                            <artifactId>CobolCrear</artifactId>
+                            <version>1.0</version>
+                        </dependency>                        
+                    </dependencies>                    
                     <executions>
                         <execution>
                             <id>compilarJaspers</id>
